@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Task List 2023</h1>
+    </header>
+
+    <form action="#" id="new-task-form">
+      <input type="text" id="new-task-input" placeholder="What do you have planned?" />
+      <input type="submit" id="new-task-submit" value="Add task" onclick="addTask()" />
+    </form>
+    <main>
+
+      <section class="task-list">
+        <div class="task_list_header">
+          <h2>Tasks</h2>
+          <button id="deleteAllBtn" class="new-task-delete" onclick="deleteAll()">
+            Delete All
+          </button>
+        </div>
+        <div id="tasks">
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
